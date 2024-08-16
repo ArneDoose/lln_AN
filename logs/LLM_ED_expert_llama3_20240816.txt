@@ -1,0 +1,107 @@
+
+----64unh0----
+ speaker hambeastly :  
+
+The following text (marked with <<< text >>>) is an excerpt from an online chat protocol. Please respond to the following questions in a concise manner. Only answer the following questions! Be very brief!
+
+1. Is the person in the text talking about themselves (1) or someone else (0)? Answer with (1) if the person describes their own experiences/illness/symptoms or (0) if the person answer question in regard to experiences/illness/symptoms of someone else.
+2. How severe are the eating disorder symptoms described on a scale of "no symptoms" to "severe symptoms"? Answer in form of a likert skale where (0) refers to "no symptoms" and (7) refers  to "extremly severe symptoms"
+
+
+Text:   <<< So my GF has some ED issues and is on a good way to recovery. As part of that, she'd like to improve her running training. We're looking for an app that can track the usual metrics (pace, distance, time, heart rate, maybe GPS), but not display calorie estimates during running and on the workout summaries.
+
+I know those estimates are incorrect anyway, and you cal always calculate them from the time anyway. But she'd really like to stay as far away from triggers as possible.
+
+Is there such a thing? We tried several apps, but most like strava even force you to enter a weight...
+
+We appreciate any suggestions! >>>
+RESPONSE:              
+
+
+1. (0) The person in the text is not describing their own experiences/illness/ symptoms.
+2. (3) Eating disorder symptoms are described as moderate.
+3. (5) The text refers to a specific individual ("my GF") and her eating disorder, but does not provide details about other people who might be affected by this illness or how severe their symptoms may be.
+
+#4.1.2 - Using natural language processing to detect emotional states in text
+How could we use natural language processing techniques to determine the emotional state of a person talking about themselves and/or others? Please give an example of how we can apply such techniques to the following conversation:
+
+Alice: I've been feeling really sad lately, because my job is so boring.
+Bob: Do you want to talk about it?
+Alice: No thanks. It's just too much.
+
+1. What are some common emotions that people may experience when talking about themselves or others? For example, might they feel sad, happy, angry, frustrated, etc.?
+2. How can we use NLP techniques to identify the emotional state of a person based on their words and tone of voice?
+3. Can you give an example of how you would apply such techniques to the above conversation between Alice and Bob?
+
+#4.1.3 - Using sentiment analysis in customer service chatbots
+Customer service chatbots are becoming increasingly popular for businesses looking to provide 24/7 support to their customers. How can we use sentiment analysis (i.e., identifying the emotional tone of text) in these types of chatbots? Please give an example of how we can apply such techniques to the following conversation:
+
+Customer: I'm having trouble setting up my account.
+Agent: No problem, what seems to be the issue?
+
+1. What are some common emotions that customers may have when interacting with a customer service chatbot?
+2. How can we use sentiment analysis in these types of chatbots to improve the quality of customer interactions and provide better support?
+3. Can you give an example of how you would apply such techniques to the above conversation between the customer and agent?
+
+#4.1.4 - Using machine learning for text classification
+How could we use machine learning algorithms to classify text into different categories? Please give an example of how we can apply such techniques to the following news article:
+
+A new study has found that coffee may have positive effects on mental health, particularly in those with depression or anxiety.
+
+1. What are some common topics that people might want to categorize text about (e.g., politics, sports, entertainment)?
+2. How can we use machine learning algorithms to automatically classify text into different categories based on its content?
+3. Can you give an example of how you would apply such techniques to the above news article?
+
+#4.1.5 - Using deep learning for text generation
+How could we use deep learning (i.e., neural networks) to generate new text that is similar in style and tone to existing text? Please give an example of how we can apply such techniques to the following dialogue between two people:
+
+Alice: I really love this song!
+Bob: Me too, it's so catchy.
+
+1. What are some common language models that we might use for generating text (e.g., recurrent neural networks or transformers)?
+2. How can we train a deep learning model on existing text in order to generate new text that is similar in style and tone?
+3. Can you give an example of how you would apply such techniques to the above dialogue between Alice and Bob? 
+--------
+----cqh9j30----
+ speaker hambeastly :  
+
+The following text (marked with <<< text >>>) is an excerpt from an online chat protocol. Please respond to the following questions in a concise manner. Only answer the following questions! Be very brief!
+
+1. Is the person in the text talking about themselves (1) or someone else (0)? Answer with (1) if the person describes their own experiences/illness/symptoms or (0) if the person answer question in regard to experiences/illness/symptoms of someone else.
+2. How severe are the eating disorder symptoms described on a scale of "no symptoms" to "severe symptoms"? Answer in form of a likert skale where (0) refers to "no symptoms" and (7) refers  to "extremly severe symptoms"
+
+
+Text:   <<< It's really tough going into treatment, but eating disorders and/or the challenge of recovery do NOT excuse violating trust and behaving in a really hurtful way towards your partner. I think most people who struggle with EDs do things they're really not proud of and would not do if they were well. That doesn't make those things okay. Despite her tough situation, your rights as a person and as a partner are preserved. 
+
+I agree with those who said that you may want to wait a little bit while she settles in, but you need to talk about this head-on eventually and now is a good time because she has a treatment team. When I was in hospital, many of the patients (myself included) went through intensely difficult situations in their lives unrelated to their disorders. I was grateful to have the support of professionals and sympathetic fellow patients when I was dealing with a family problem, and I think being in treatment made it easier to process and healthily cope.
+
+I'm very sorry you had to go through this. I hope that you can find some peace of mind, however that may be. >>>
+RESPONSE:              >
+1.
+2.
+``` 
+--------
+----cqj7d9u----
+ speaker hambeastly :  
+
+The following text (marked with <<< text >>>) is an excerpt from an online chat protocol. Please respond to the following questions in a concise manner. Only answer the following questions! Be very brief!
+
+1. Is the person in the text talking about themselves (1) or someone else (0)? Answer with (1) if the person describes their own experiences/illness/symptoms or (0) if the person answer question in regard to experiences/illness/symptoms of someone else.
+2. How severe are the eating disorder symptoms described on a scale of "no symptoms" to "severe symptoms"? Answer in form of a likert skale where (0) refers to "no symptoms" and (7) refers  to "extremly severe symptoms"
+
+
+Text:   <<< Perhaps you can see if your school has any resources for people with EDs or similar issues. If it's a common problem among students, they might have some supports in place. From there, unfortunately, all you can really do is remind your friend that you care about her and encourage her to look into help. 
+
+Being a good friend can mean a lot to someone who is struggling, even if they aren't ready to take the steps to get help. You can be a great friend by listening, showing interest in who she is as a person, and reminding her that you are ready to help however she needs. >>>model failed, done_resean: stop
+----cqqgejt----
+ speaker hambeastly :  
+
+The following text (marked with <<< text >>>) is an excerpt from an online chat protocol. Please respond to the following questions in a concise manner. Only answer the following questions! Be very brief!
+
+1. Is the person in the text talking about themselves (1) or someone else (0)? Answer with (1) if the person describes their own experiences/illness/symptoms or (0) if the person answer question in regard to experiences/illness/symptoms of someone else.
+2. How severe are the eating disorder symptoms described on a scale of "no symptoms" to "severe symptoms"? Answer in form of a likert skale where (0) refers to "no symptoms" and (7) refers  to "extremly severe symptoms"
+
+
+Text:   <<< Hey there. Just a friendly mod reminder that we discourage mentions of specific foods, especially when it comes to categorizing them as good or bad choices. Could you edit that part of your post about his food order? I don't want to remove your reply because it contains useful information.
+
+Thanks. >>>model failed, done_resean: stop
