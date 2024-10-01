@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 75%;
+            height: 800px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"id": "gainit", "label": "gainit", "shape": "dot"}, {"id": "bodyweightfitness", "label": "bodyweightfitness", "shape": "dot"}, {"id": "EatingDisorders", "label": "EatingDisorders", "shape": "dot"}, {"id": "selfharm", "label": "selfharm", "shape": "dot"}, {"id": "SuicideWatch", "label": "SuicideWatch", "shape": "dot"}, {"id": "nutrition", "label": "nutrition", "shape": "dot"}, {"id": "naturalbodybuilding", "label": "naturalbodybuilding", "shape": "dot"}, {"id": "SelfHarmCommunity", "label": "SelfHarmCommunity", "shape": "dot"}, {"id": "BingeEatingDisorder", "label": "BingeEatingDisorder", "shape": "dot"}, {"id": "fuckeatingdisorders", "label": "fuckeatingdisorders", "shape": "dot"}, {"id": "bulimia", "label": "bulimia", "shape": "dot"}]);
+        edges = new vis.DataSet([{"from": "gainit", "title": "Weight: 724", "to": "bodyweightfitness", "value": 2.859738566197147}, {"from": "EatingDisorders", "title": "Weight: 34", "to": "selfharm", "value": 1.5314789170422551}, {"from": "EatingDisorders", "title": "Weight: 60", "to": "SuicideWatch", "value": 1.7781512503836436}, {"from": "selfharm", "title": "Weight: 325", "to": "SuicideWatch", "value": 2.5118833609788744}, {"from": "SuicideWatch", "title": "Weight: 107", "to": "nutrition", "value": 2.0293837776852097}, {"from": "selfharm", "title": "Weight: 38", "to": "nutrition", "value": 1.5797835966168101}, {"from": "bodyweightfitness", "title": "Weight: 158", "to": "naturalbodybuilding", "value": 2.1986570869544226}, {"from": "bodyweightfitness", "title": "Weight: 392", "to": "nutrition", "value": 2.593286067020457}, {"from": "gainit", "title": "Weight: 220", "to": "naturalbodybuilding", "value": 2.342422680822206}, {"from": "gainit", "title": "Weight: 369", "to": "nutrition", "value": 2.56702636615906}, {"from": "naturalbodybuilding", "title": "Weight: 111", "to": "nutrition", "value": 2.0453229787866576}, {"from": "selfharm", "title": "Weight: 21", "to": "SelfHarmCommunity", "value": 1.3222192947339193}, {"from": "EatingDisorders", "title": "Weight: 31", "to": "gainit", "value": 1.4913616938342726}, {"from": "SuicideWatch", "title": "Weight: 122", "to": "bodyweightfitness", "value": 2.0863598306747484}, {"from": "SuicideWatch", "title": "Weight: 135", "to": "gainit", "value": 2.130333768495006}, {"from": "BingeEatingDisorder", "title": "Weight: 48", "to": "nutrition", "value": 1.6812412373755872}, {"from": "BingeEatingDisorder", "title": "Weight: 24", "to": "selfharm", "value": 1.380211241711606}, {"from": "BingeEatingDisorder", "title": "Weight: 33", "to": "SuicideWatch", "value": 1.5185139398778875}, {"from": "fuckeatingdisorders", "title": "Weight: 28", "to": "SuicideWatch", "value": 1.4471580313422192}, {"from": "BingeEatingDisorder", "title": "Weight: 32", "to": "EatingDisorders", "value": 1.505149978319906}, {"from": "BingeEatingDisorder", "title": "Weight: 25", "to": "gainit", "value": 1.3979400086720377}, {"from": "BingeEatingDisorder", "title": "Weight: 28", "to": "bodyweightfitness", "value": 1.4471580313422192}, {"from": "EatingDisorders", "title": "Weight: 22", "to": "bulimia", "value": 1.3424226808222062}, {"from": "selfharm", "title": "Weight: 28", "to": "gainit", "value": 1.4471580313422192}, {"from": "selfharm", "title": "Weight: 28", "to": "bodyweightfitness", "value": 1.4471580313422192}, {"from": "SuicideWatch", "title": "Weight: 25", "to": "naturalbodybuilding", "value": 1.3979400086720377}, {"from": "EatingDisorders", "title": "Weight: 41", "to": "fuckeatingdisorders", "value": 1.6127838567197355}, {"from": "fuckeatingdisorders", "title": "Weight: 24", "to": "selfharm", "value": 1.380211241711606}, {"from": "fuckeatingdisorders", "title": "Weight: 27", "to": "nutrition", "value": 1.4313637641589874}, {"from": "BingeEatingDisorder", "title": "Weight: 22", "to": "fuckeatingdisorders", "value": 1.3424226808222062}, {"from": "EatingDisorders", "title": "Weight: 46", "to": "nutrition", "value": 1.662757831681574}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"physics": {"barnesHut": {"gravitationalConstant": -30000, "springLength": 100, "springConstant": 0.001, "damping": 0.09}, "minVelocity": 0.75}, "nodes": {"font": {"size": 50}}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
